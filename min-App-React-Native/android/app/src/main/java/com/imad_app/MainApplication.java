@@ -1,4 +1,4 @@
-package com.friends_book;
+package com.imad_app;
 
 import android.app.Application;
 import com.facebook.react.PackageList;
@@ -10,6 +10,7 @@ import com.facebook.react.defaults.DefaultReactNativeHost;
 import com.facebook.soloader.SoLoader;
 import java.util.List;
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
+
 
 public class MainApplication extends Application implements ReactApplication {
 
