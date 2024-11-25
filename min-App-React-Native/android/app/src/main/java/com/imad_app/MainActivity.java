@@ -1,4 +1,4 @@
-package com.friends_book;
+package com.imad_app;
 import android.os.Bundle;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
@@ -14,7 +14,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "Friends_Book";
+    return "imad_app";
   }
   @Override
   protected void onCreate(Bundle savedInstanceState) {

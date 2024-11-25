@@ -9,7 +9,7 @@ function AdminScreen({navigation}) {
   const [allUserData, setAllUserData] = useState('');
 
   async function getAllData() {
-    axios.get('http://192.168.1.6:5001/get-all-user').then(res => {
+    axios.get('http://100.73.108.45:5001/get-all-user').then(res => {
       console.log(res.data);
 
       setAllUserData(res.data.data);
@@ -20,7 +20,7 @@ function AdminScreen({navigation}) {
     const token = await AsyncStorage.getItem('token');
     console.log(token);
     axios
-      .post('http://192.168.1.30:5001/userdata', {token: token})
+      .post('http://192.168.68.210:5001/userdata', {token: token})
       .then(res => {
         console.log(res.data);
         setUserData(res.data.data);
@@ -39,7 +39,7 @@ function AdminScreen({navigation}) {
 
   function deleteUser(data) {
     axios
-      .post('http://192.168.1.69:5001/delete-user', {id: data._id})
+      .post('http://192.168.0.233:5001/delete-user', {id: data._id})
       .then(res => {
         console.log(res.data);
         if(res.data.status=="Ok"){
